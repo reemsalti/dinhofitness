@@ -1,0 +1,150 @@
+
+.names{
+    justify-content: space-between;
+    display: flex;
+  }
+  .namediv{
+    display: space-between;
+    flex-direction: column;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+ 
+    .label {
+      font-size: 1rem;
+      font-weight: bolder;
+      font-family: ostrich;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: white;
+      padding: 5px;
+    }
+
+    .input
+    textarea {
+      font-size: 12pt;
+      border: none;
+      border-radius: 3px;
+      margin-bottom: 1rem;
+      padding: 0.4rem;
+      font-family: Montserrat;
+      width: 100%
+    }
+    
+    .input {
+        font-size: 11pt;
+        height: 20px;
+    }
+    .message{
+      font-family: Montserrat !important;
+    }
+
+    .submitwrapper{
+    padding: 1rem;
+    }
+    .submit {
+      max-width: 400px;
+      margin: 0 auto;
+      color: #000;
+      background-color: #fff;
+      border: none;
+      border-radius: 3px;
+      padding: 11px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: flex;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      font-family: bebas;
+      font-weight: 800;
+      letter-spacing: 2px;
+      box-shadow: 0px 0px 10px grey;
+      padding: 1rem;
+    }
+
+    .submit:hover {
+      background-color: rgb(192 175 214);
+      color: #fff;
+    }
+
+    .formwrapper {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 780px;
+      justify-content: center;
+      height: 100%;
+    }
+    .clinks {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        text-align: right;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .clink {
+      text-decoration: none;
+      color: white;
+      font-family: bebas;
+      align-content: center; 
+      font-size: 1rem;
+      justify-content: center;
+      font-weight: lighter;
+    }
+
+    .cicon {
+      font-size: 0.9rem;
+      align-self: center;
+    }
+
+
+    .formmsg{
+      text-transform: uppercase;
+      color: white;
+      font-size: 1.3rem;
+      padding-bottom: 2rem;
+      font-family: Bebas;
+      text-align: right;
+    }
+
+    @media (prefers-color-scheme: light) {
+        .label {
+          color: black;
+        }
+        .clink {
+            color: black;
+        }
+        .submit{
+            color: black;
+        }
+        .submit:hover{
+            color: black;
+        }
+        .formmsg{
+            color: black;
+        }
+      }
+
+      @media screen and (min-width: 690px){
+        .formwrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+      }

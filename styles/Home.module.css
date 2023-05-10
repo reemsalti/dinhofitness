@@ -1,0 +1,279 @@
+.landingpage {
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  
+}
+.shine {
+  position: absolute;
+  top: 50%;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  width: 100%;
+  background: linear-gradient(-77deg, rgba(157, 157, 157, 0.827)80%, rgba(255, 255, 255, 0.891) 10%, rgb(0, 0, 0));
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s infinite ease-out;
+  opacity: 0.8;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(223, 223, 223, 0.72);
+  z-index:999;
+  font-family: bebas;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  display: flex ;
+  
+}
+
+.bgcover {
+  background: rgba(22, 22, 22, 0.745);
+  width: 100%;
+  height: 100%; 
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.landingbg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  z-index: 0;
+}
+@media  screen and (max-width: 490px) {
+  .shine {
+      font-size: 2rem;
+      position: relative;
+      letter-spacing: 2px;
+      background: linear-gradient(-77deg, rgba(157, 157, 157, 0.827)80%, rgba(255, 255, 255, 0.891) 10%, rgb(0, 0, 0));
+      background-repeat: no-repeat;
+      background-size: 80%;
+      animation: animate 3s infinite ease-out;
+      opacity: 0.8;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: rgba(223, 223, 223, 0.72);
+      z-index: 999;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+    
+    }}
+.landingtitle {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: bebas;
+  font-size: 3rem;
+}
+.title {
+  font-family: Bebas;
+}
+
+.navcontainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.navwrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 2rem;
+  border: solid 1px rgb(255, 255, 255);
+  
+}
+
+@media (prefers-color-scheme: light) {
+  .navwrapper {
+    border: solid 1px black;
+  }
+}
+
+.navlink {
+  font-family: Ostrich;
+  font-size: 1.5rem;
+}
+
+.section {
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 800px;
+}
+
+
+.subheader {
+  font-family: bebas;
+  padding: 1rem;
+  font-size: 2.3rem;
+  margin: 0 auto;
+  display: flex;
+}
+
+.cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width:600px){
+  .cards {
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.card {
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 15px rgba(112, 112, 112, 0.532);
+  width: 300px;
+  margin: 1rem;
+}
+
+.imgwrapper {
+  background: wheat;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px 5px 0px 0px;
+  position: relative;
+}
+
+.prodimg {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.pricetag {
+  color: rgb(255, 255, 255);
+  display: flex;
+  background: rgba(82, 82, 82, 0.781);
+  padding: 1rem;
+  justify-content: center;
+  top: 0px;
+  right: 0;
+  position: absolute;
+  font-family: Montserrat;
+  font-size: 0.8rem;
+}
+
+.proddescription {
+  color: black; 
+  font-family: Arial Narrow;
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin: 0 auto;
+  padding: 1rem
+}
+
+.btnwrapper{
+  display: flex;
+  background: rgb(255, 255, 255);
+  width: 90px;
+  justify-content: center;
+  margin: 1rem;
+  align-self: center;
+  align-content: center;
+  box-shadow: 0px 0px 10px rgb(195, 195, 195);
+  color: black;
+  overflow: hidden;
+}
+.btnwrapper:hover {
+  background: black;
+  color: white;
+}
+
+.buybtn:hover {
+  cursor: grab;
+}
+
+.buybtn { 
+  font-family: bebas;
+  font-size: 1.2rem;
+  display: flex;
+  object-fit: cover;
+  padding: 12px;
+  justify-content: center;
+}
+
+.aboutimg {
+
+}
+.aboutwrapper {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.aboutimgwrapper {
+  height: 230px;
+  width: 230px;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 150px;
+  overflow: hidden;
+}
+
+.aboutimg{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.aboutme {
+  font-family: Montserrat;
+  padding: 0rem 2rem;
+  text-align: center;
+  font-size: 1rem;
+  max-width: 700px;
+}
+
+.contactsection{
+  padding: 2rem;
+  display: flex;
+}
+
+.footer {
+  background: black;
+  height: 3rem;
+  padding: 10px;
+}
+
+.copyrightline {
+  color: white;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: flex-end;
+  font-size: 0.8rem;
+}
+
+.footerlogo {
+font-family: bebas;
+font-size: 1.2rem;
+}
