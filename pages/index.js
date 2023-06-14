@@ -2,8 +2,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import img1 from '../public/mealprep.jpg'
-import img2 from '../public/cookBook.png'
+import img1 from '../public/pic4.png'
+import img2 from '../public/cookBook2.png'
+import img6 from '../public/cookBook.jpeg'
 import ScrollArrow from '../components/ScrollArrow'
 import useSticky from '../components/useSticky'
 import img3 from '../public/pic3.png'
@@ -54,8 +55,8 @@ export default function Home() {
             <div className={styles.cards}>
               <div className={styles.card}>
                 <div className={styles.imgwrapper}>
-                    <Image className={styles.prodimg} src={img1} alt=''/>
-                    <p className={styles.pricetag}>$0.00/month</p>
+                    <Image className={styles.prodimg} src={img6} alt=''/>
+                    <p className={styles.pricetag}>$10.00</p>
                 </div>
                 <p className={styles.proddescription}>Bulking Cookbook</p>
                 <div className={styles.btnwrapper}>
@@ -65,7 +66,7 @@ export default function Home() {
               <div className={styles.card}>
                 <div className={styles.imgwrapper}>
                     <Image className={styles.prodimg} src={img2} alt=''/>
-                    <p className={styles.pricetag}>FREE</p>
+                    <p className={styles.pricetag}>$10.00</p>
                 </div>
                 <p className={styles.proddescription}>Shredding Cookbook</p>
                 <div className={styles.btnwrapper}>

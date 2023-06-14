@@ -46,18 +46,18 @@ const ContactPage = () => {
   };
 
   return (
-  <div className={styles.formwrapper}>
-      
+    <div className={styles.formwrapper}>
+
       <div className={styles.form}>
         {/* <p className={styles.formmsg}>Leave Me a message</p> */}
-        
+
         <form id="contactForm" ref={form} onSubmit={sendEmail}>
           <div className={styles.names}>
             <div className={styles.wrapper}>
               <label className={styles.label} htmlFor="name">*First Name</label>
               <input className={styles.input}
                 type="text"
-                name="first_name" 
+                name="first_name"
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
                 required
@@ -66,8 +66,8 @@ const ContactPage = () => {
             <div className={styles.wrapper}>
               <label className={styles.label} htmlFor="name">*Last Name</label>
               <input className={styles.input}
-                type="text" 
-                name="last_name" 
+                type="text"
+                name="last_name"
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
                 required
@@ -78,23 +78,23 @@ const ContactPage = () => {
             <label className={styles.label} htmlFor="tel">*Phone</label>
             <input className={styles.input}
               id="tel"
-              type="tel" 
-              name="user_tel" 
+              type="tel"
+              name="user_tel"
               value={number}
               onChange={(e) => setNumber(e.target.value)}
-              required 
-            /> 
+              required
+            />
           </div>
           <div className={styles.wrapper}>
             <label className={styles.label} htmlFor="email">*E-mail Address</label>
             <input className={styles.input}
               id="email"
-              type="email" 
-              name="user_email" 
+              type="email"
+              name="user_email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-            /> 
+            />
           </div>
           <div className={styles.wrapper}>
             <label className={styles.label} htmlFor="message">*Message</label>
@@ -108,11 +108,10 @@ const ContactPage = () => {
             />
           </div>
           <div className={styles.submitwrapper}>
-            <button 
-              className={styles.submit} 
-              type="submit" 
-              value="Send" 
-              onClick={() => {(sendEmail());}}
+            <button
+              className={styles.submit}
+              type="submit"
+              value="Send"
             >
               Submit
             </button>
@@ -141,13 +140,13 @@ const ContactPage = () => {
           </a>
           <br></br>
           <a href='https://www.instagram.com/_mamdinho/' className={styles.clink}>
-            <SiInstagram className={styles.cicon}/> @_mamdinho
+            <SiInstagram className={styles.cicon} /> @_mamdinho
           </a>
         </div>
       </div>
     </div>
-  
- );
+
+  );
 };
 export default ContactPage;
 
