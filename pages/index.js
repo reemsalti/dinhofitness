@@ -58,7 +58,7 @@ export default function Home() {
                     <Image className={styles.prodimg} src={img6} alt=''/>
                     <p className={styles.pricetag}>$10.00</p>
                 </div>
-                <p className={styles.proddescription}>Bulking Cookbook</p>
+                <p className={styles.proddescription}>BUILD Cookbook</p>
                 <div className={styles.btnwrapper}>
                   <a href='https://buy.stripe.com/28odRv5yP0sEbVm001' className={styles.buybtn}>Buy now</a>
                 </div>
@@ -68,7 +68,7 @@ export default function Home() {
                     <Image className={styles.prodimg} src={img2} alt=''/>
                     <p className={styles.pricetag}>$10.00</p>
                 </div>
-                <p className={styles.proddescription}>Shredding Cookbook</p>
+                <p className={styles.proddescription}>SHRED Cookbook</p>
                 <div className={styles.btnwrapper}>
                   <a href='https://buy.stripe.com/dR66p39P5b7i9NefYY' className={styles.buybtn}>Buy Now</a>
                 </div>
