@@ -7,7 +7,7 @@ export default async (req, res) => {
   const stripe = new Stripe(process.env.STRIPE_KEY);
 
   // Verify the event came from Stripe by checking the signature
-  const event = stripe.webhooks.constructEvent(req.body, req.headers['stripe-signature'], 'your-webhook-secret');
+  const event = stripe.webhooks.constructEvent(req.body, req.headers['stripe-signature'], `${process.env.WEBHOOK_SECRET}`);
 
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object;
@@ -17,13 +17,13 @@ export default async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'mohammedfalahy6@gmail.com',
+        user: process.env.MY_EMAIL,
         pass: process.env.PASSWORD
       }
     });
 
     const mailOptions = {
-      from: 'mohammedfalahy6@gmail.com',
+      from: process.env.MY_EMAIL,
       to: session.customer_email,
       subject: 'Your Cookbook',
       text: 'Thank you for your purchase! Please find your cookbook attached.',
