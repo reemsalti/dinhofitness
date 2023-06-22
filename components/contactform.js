@@ -24,6 +24,7 @@ const ContactPage = () => {
         console.log(error.text);
       });
     console.log(firstName, lastName, email, number, message);
+    console.log(`Dummy Push!`);
 
     setTimeout(function handleSubmit() {
       setFirstName("");
