@@ -132,11 +132,11 @@ const ContactPage = () => {
       <div className={styles.contactinfo}>
         <div className={styles.clinks}>
           <a href='tel:6476670878' className={styles.clink}>
-            647-667-0878
+            WhatsApp +1 (647)-667-0878
           </a>
           <br></br>
-          <a href='mailto:mamdinho777@gmail.com' className={styles.clink}>
-            mamdinho777@gmail.com
+          <a href='mailto:mohammedfalahy6@gmail.com' className={styles.clink}>
+            mohammedfalahy6@gmail.com
           </a>
           <br></br>
           <a href='https://www.instagram.com/_mamdinho/' className={styles.clink}>

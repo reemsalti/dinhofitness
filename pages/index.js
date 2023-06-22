@@ -45,8 +45,8 @@ export default function Home() {
                 <Image src={img3} alt='' className={styles.aboutimg}/>
               </div>
               <p className={styles.aboutme}>
-                My name is Mohammed, I'm a bodybuilder with over 6 years of experience in the industry. I've competed in several men's physique competitions, and my passion and drive for fitness has led me to help others achieve their goals as well. <br></br> As a personal trainer, I specialize in creating custom meal and fitness plans that are accessible to everyone, because I believe guidance shouldn't be limited by cost.
-                I have experience training clients remotely from all over the world, including Canada, Tanzania, and Oman. My goal is to provide personalized guidance and support to help clients achieve their fitness goals no matter where they are located. Whether you're a beginner or an experienced athlete, I'm committed to helping you reach your full potential and achieve the body of your dreams.
+                My name is Mohammed, I'm a Fitness Enthusiast and I've been training for over 6 years now. I competed in a couple Men's Physique competitions, and my passion and drive for fitness has led me to want to help others achieve their goals as well. <br></br> As a personal trainer, I specialize in creating custom meal and fitness plans that are accessible to everyone, because I believe guidance shouldn't be limited by cost.
+                I have experience training clients remotely from around the world, including Canada, Tanzania, Malaysia, and Oman. My goal is to provide personalized guidance and support to help clients achieve their fitness goals no matter where they are located. Whether you're a beginner or an experienced athlete, I'm committed to helping you reach your full potential and achieve the body of your dreams.
               </p>
               </div>
           </div>
