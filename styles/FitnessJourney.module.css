@@ -1,0 +1,43 @@
+.backbtnwrapper {
+    display: flex;
+}
+
+.backbtn {
+    font-size: 2rem;
+}
+
+.section {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+    padding: 2rem;
+}
+
+.shine {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    width: 100%;
+    background: linear-gradient(-77deg, rgba(157, 157, 157, 0.827)80%, rgba(255, 255, 255, 0.891) 10%, rgb(0, 0, 0));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s infinite ease-out;
+    opacity: 0.8;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: rgba(223, 223, 223, 0.72);
+    color: rgba(223, 223, 223, 0.72); 
+    font-family: 'bebas', Arial, sans-serif; 
+    margin: 0 auto;
+    padding-bottom: 3rem;
+  }
+
+@keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+}
