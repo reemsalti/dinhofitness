@@ -115,6 +115,36 @@
   max-width: 800px;
 }
 
+.aboutbtnwrapper{
+  display: flex;
+  background: rgb(255, 255, 255);
+  justify-content: center;
+  margin: 0 auto;
+  width: max-content;
+  align-self: center;
+  align-content: center;
+  color: black;
+  overflow: hidden;
+  border: solid 1px black;
+}
+.aboutbtnwrapper:hover {
+  background: black;
+  color: white;
+  border: solid 1px white;
+}
+
+.aboutbtn:hover {
+  cursor: grab;
+}
+
+.aboutbtn { 
+  font-family: bebas;
+  font-size: 1.2rem;
+  display: flex;
+  object-fit: cover;
+  padding: 12px;
+  justify-content: center;
+}
 
 .subheader {
   font-family: bebas;
