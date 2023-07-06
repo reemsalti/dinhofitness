@@ -6,7 +6,7 @@ import ImageSlider from '../components/Gallery/Gallery';
 
 const FitnessJourney = () => {
   // Add your logic to display old pictures and show your progress here
-
+  console.log(`test test`);
   return (
     <div className={styles.main}>
       <div className={styles.backbtnwrapper}>
