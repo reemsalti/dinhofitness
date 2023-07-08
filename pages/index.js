@@ -10,20 +10,15 @@ import useSticky from '../components/useSticky'
 import img3 from '../public/pic3.png'
 import img4 from '../public/balanzi.jpeg';
 import img5 from '../public/epn.jpeg'
+import stubbornFat from '../public/stubbornFat.png'
+import posturePic from '../public/posture.png'
 import ContactPage from '../components/contactform'
 import Link from 'next/link'
+import CollapsibleText from '../components/CollapsibleText';
 
 
 export default function Home() {
   const { sticky, stickyRef } = useSticky();
-  const CollapsibleText = ({ text, maxLines = 3 }) => {
-    const [isExpanded, setIsExpanded] = useState(false);
-    const style = isExpanded ? {} : { 
-      display: "-webkit-box", 
-      WebkitLineClamp: maxLines, 
-      WebkitBoxOrient: "vertical", 
-      overflow: "hidden" 
-    };
   return (
     <div className={styles.container}>
       <Head>
@@ -54,8 +49,8 @@ export default function Home() {
                 <Image src={img3} alt='' className={styles.aboutimg} />
               </div>
               <p className={styles.aboutme}>
-                My name is Mohammed, I'm a Fitness Enthusiast and I've been training for over 6 years now. I competed in two Men's Physique competitions, and my passion and drive for fitness has led me to want to help others achieve their goals as well. <br></br> As a trainer, I specialize in creating custom meal and fitness plans that are accessible to everyone, because I believe guidance shouldn't be limited by cost.
-                I have experience training clients remotely from around the world ! My goal is to provide guidance and support to help clients achieve their fitness goals no matter where they are located. Whether you're a beginner or an experienced athlete, I'm committed to helping you reach your full potential and achieve the body of your dreams.
+                My name is Mohammed, I'm a Fitness Enthusiast and I've been training for over 6 years now. I competed in two Men's Physique competitions, and my passion for fitness has led me to want to help others achieve their goals as well. As a trainer, I specialize in creating custom meal and fitness plans that are accessible to everyone, because I believe guidance shouldn't be limited by cost.
+                My goal is to provide guidance and support to help clients achieve their fitness goals. Whether you're a beginner or an experienced athlete, I'm committed to helping you reach your full potential and achieve the body of your dreams.
               </p>
             </div>
             <div className={styles.aboutbtnwrapper}>
@@ -93,20 +88,31 @@ export default function Home() {
                   <p className={styles.pricetag}>$85.00/month</p>
                 </div>
                 <p className={styles.proddescription}>Online Personal Training Program</p>
-                <p className={styles.proddetail}>One on one training program with me where I'll go over your check ins with you every weekend and track your progress. You will also have direct contact with my personal number and can ask me literally anything.</p>
+                <p className={styles.proddetail}>One on one training program with me where I'll go over your check ins with you every weekend and track your progress. You will also have my personal number and can get in direct contact</p>
                 <div className={styles.btnwrapper}>
                   <a href='https://buy.stripe.com/6oE00F3qHb7i2kMcMO' className={styles.buybtn}>Buy now</a>
                 </div>
               </div>
               <div className={styles.card}>
                 <div className={styles.imgwrapper}>
-                  <Image className={styles.prodimg} src={img1} alt='' />
+                  <Image className={styles.prodimg} src={stubbornFat} alt='' />
                   <p className={styles.pricetag}>FREE</p>
                 </div>
                 <p className={styles.proddescription}>THE STUBBORN FAT</p>
                 <p className={styles.proddetail}>This is an E-book that I personally enjoyed reading. It gives a ton of insight as to why you might not be loosing that stubborn belly fat. </p>
                 <div className={styles.btnwrapper}>
                   <a href='https://dinhofitness-public.s3.amazonaws.com/E-books/The+Stubborn+Fat+Solution+-+Flatten+Your+Abs.pdf' download className={styles.buybtn}>Download</a>
+                </div>
+              </div>
+              <div className={styles.card}>
+                <div className={styles.imgwrapper}>
+                  <Image className={styles.prodimg} src={posturePic} alt='' />
+                  <p className={styles.pricetag}>FREE</p>
+                </div>
+                <p className={styles.proddescription}>THE PERFECT POSTURE</p>
+                <p className={styles.proddetail}>Do you find yourself constantly in pain around your neck or lower body ? Try the exercises discussed in this book ! </p>
+                <div className={styles.btnwrapper}>
+                  <a href='https://dinhofitness-public.s3.amazonaws.com/E-books/Perfect_Posture_In_30_Days_Rebranded.pdf' download className={styles.buybtn}>Download</a>
                 </div>
               </div>
             </div>
@@ -150,5 +156,4 @@ export default function Home() {
       </footer>
     </div>
   )
-}
 }
