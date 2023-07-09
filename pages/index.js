@@ -10,6 +10,7 @@ import useSticky from '../components/useSticky'
 import img3 from '../public/pic3.png'
 import img4 from '../public/balanzi.jpeg';
 import img5 from '../public/epn.jpeg'
+import img7 from '../public/truMedic.png'
 import stubbornFat from '../public/stubbornFat.png'
 import posturePic from '../public/posture.png'
 import ContactPage from '../components/contactform'
@@ -136,6 +137,16 @@ export default function Home() {
                 <p className={styles.proddescription}>Get 10% off Nutritional Supplements using code "MFALAHY" **Apply code at Checkout</p>
                 <div className={styles.btnwrapper}>
                   <a href="https://ep-nutrition.com?aff=10413" target='_blank' className={styles.buybtn}>SHOP SITE</a>
+                </div>
+              </div>
+              <div className={styles.card}>
+                <div className={styles.imgwrapper}>
+                  <Image className={styles.prodimg} src={img7} alt='' />
+                  <p className={styles.pricetag}>33% OFF</p>
+                </div>
+                <p className={styles.proddescription}>Get 33% off TruMedic Cold & Heat Massage gun using code "MAMDINHO33" **Apply code at Checkout</p>
+                <div className={styles.btnwrapper}>
+                  <a href="https://trumedic.com/products/trurelief%E2%84%A2-impact-therapy-device-thermal" target='_blank' className={styles.buybtn}>SHOP SITE</a>
                 </div>
               </div>
             </div>
