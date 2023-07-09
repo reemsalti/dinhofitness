@@ -27,6 +27,7 @@
   
 }
 
+
 .bgcover {
   background: rgba(22, 22, 22, 0.745);
   width: 100%;
@@ -110,10 +111,13 @@
 }
 
 .section {
-  margin: 0 auto;
+  display: flex;
   justify-content: center;
-  max-width: 800px;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
+
 
 .aboutbtnwrapper{
   display: flex;
@@ -156,19 +160,23 @@
 
 .cards {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
   width: 100%;
-  justify-content: space-evenly;
 }
 
-@media screen and (max-width:600px){
+
+
+
+@media screen and (max-width: 750px) {
   .cards {
     flex-direction: column;
-    margin: 0 auto;
     align-items: center;
-    display: flex;
-    justify-content: space-evenly;
   }
 }
+
 
 .card {
   background: rgb(255, 255, 255);
@@ -178,7 +186,6 @@
   flex-direction: column;
   box-shadow: 0px 0px 15px rgba(112, 112, 112, 0.532);
   width: 300px;
-  margin: 1rem;
 }
 
 .imgwrapper {
@@ -212,11 +219,19 @@
 
 .proddescription {
   color: black; 
-  font-family: Arial Narrow;
+  font-family: Bebas;
   font-size: 1rem;
   text-transform: capitalize;
   margin: 0 auto;
+  flex-grow: 1;
   padding: 1rem
+}
+
+.proddetail {
+  color: black;
+  margin: 0;
+  padding: 1rem;
+  font-family: Montserrat;
 }
 
 .btnwrapper{
@@ -230,6 +245,7 @@
   box-shadow: 0px 0px 10px rgb(195, 195, 195);
   color: black;
   overflow: hidden;
+  margin-top: auto;
 }
 .btnwrapper:hover {
   background: black;

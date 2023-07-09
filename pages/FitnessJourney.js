@@ -13,6 +13,7 @@ const FitnessJourney = () => {
         <Link className={styles.backbtn} href='/#nav'><BiArrowToLeft/></Link>
       </div>
       <Link href='/' className={styles.shine} id='home'>Dinho Fitness</Link>
+      <p className={`${styles.aboutme} ${styles.centeredText}`}>Random pictures that show my transformations back and forth upto my current physique</p>
       <div className={styles.page}>
         <div className={styles.section}>
             <ImageSlider/>
