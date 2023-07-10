@@ -2,9 +2,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; //
 import { Carousel } from "react-responsive-carousel";
 import styles from './gallery.module.css'
 const img1 = '/FitnessJourney/2fe62568-4c6b-4dae-bfe4-63528d34e574.JPG';
-const img_1 = '/FitnessJourney/IMG_1.JPG';
-const img_2 = '/FitnessJourney/IMG_2.JPG';
-const img_3 = '/FitnessJourney/IMG_3.JPG';
+const img_1 = '/FitnessJourney/IMG_1.jpg';
+const img_2 = '/FitnessJourney/IMG_2.jpg';
+const img_3 = '/FitnessJourney/IMG_3.jpg';
 const img2 = '/FitnessJourney/8a4c449b-217b-4a1f-83d5-a49117358ea6.jpg';
 const img3 = '/FitnessJourney/c725438a-f1e7-499b-a0f8-aebde916729e.JPG';
 const img4 = '/FitnessJourney/IMG_3BE988D893AF-1.jpeg';
