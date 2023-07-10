@@ -1,19 +1,12 @@
-// pages/api/payment.js
-
 import { Stripe } from 'stripe';
 import nodemailer from 'nodemailer';
 
-export default async (req, res) => {
+const handler = async (req, res) => {
   const stripe = new Stripe(process.env.STRIPE_KEY);
-
-  // Verify the event came from Stripe by checking the signature
   const event = stripe.webhooks.constructEvent(req.body, req.headers['stripe-signature'], `${process.env.WEBHOOK_SECRET}`);
 
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object;
-
-    // Here you would generate the PDF, or fetch it from somewhere
-    // and then send an email with it attached
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -46,3 +39,5 @@ export default async (req, res) => {
     });
   }
 }
+
+export default handler;
