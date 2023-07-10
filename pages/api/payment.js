@@ -1,48 +1,50 @@
-// pages/api/payment.js
-
 import { Stripe } from 'stripe';
-import nodemailer from 'nodemailer';
+import sgMail from '@sendgrid/mail';
+import AWS from 'aws-sdk';
 
-export default async (req, res) => {
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
+AWS.config.update({
+  accessKeyId: process.env.AWS_ACCESS_KEY,
+  secretAccessKey: process.env.AWS_SECRET_KEY,
+  region: process.env.AWS_REGION
+});
+const s3 = new AWS.S3();
+const urlExpirationTime = 60 * 60; 
+
+
+const handler = async (req, res) => {
   const stripe = new Stripe(process.env.STRIPE_KEY);
-
-  // Verify the event came from Stripe by checking the signature
   const event = stripe.webhooks.constructEvent(req.body, req.headers['stripe-signature'], `${process.env.WEBHOOK_SECRET}`);
 
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object;
 
-    // Here you would generate the PDF, or fetch it from somewhere
-    // and then send an email with it attached
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: process.env.MY_EMAIL,
-        pass: process.env.PASSWORD
-      }
-    });
-
-    const mailOptions = {
-      from: process.env.MY_EMAIL,
+    const params = {
+      Bucket: 'dinhofitness-public',
+      Key: 'MyCookBook.pdf', 
+      Expires: urlExpirationTime
+    };
+    const signedUrl = s3.getSignedUrl('getObject', params);
+    console.log(signedUrl);  // Outputs the signed URL
+    const msg = {
       to: session.customer_email,
+      from: process.env.MY_EMAIL,
       subject: 'Your Cookbook',
-      text: 'Thank you for your purchase! Please find your cookbook attached.',
-      attachments: [
-        {
-          filename: 'MyCookBook.pdf',
-          path: '../public/MyCookBook.pdf',
-          contentType: 'application/pdf'
-        }
-      ]
+      text: `Welcome to the dinhoFitness Fam !!! Thank you for your purchase :) I hope you find the recipes and macros appealing. You can download your cookbook here: ${signedUrl}`
     };
 
-    transporter.sendMail(mailOptions, function(err, info){
-      if (err) {
-        console.error(err);
-        res.status(500).json({ error: 'Error sending email' });
-      } else {
-        res.json({ received: true });
+    try {
+      await sgMail.send(msg);
+      res.json({ received: true });
+    } catch (error) {
+      console.error(error);
+      if (error.response) {
+        console.error(error.response.body)
       }
-    });
+      res.status(500).json({ error: 'Error sending email' });
+    }
   }
 }
+
+export default handler;
