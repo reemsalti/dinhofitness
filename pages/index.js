@@ -15,7 +15,7 @@ import stubbornFat from '../public/stubbornFat.png'
 import posturePic from '../public/posture.png'
 import ContactPage from '../components/contactform'
 import Link from 'next/link'
-import CollapsibleText from '../components/CollapsibleText';
+// import CollapsibleText from '../components/CollapsibleText';
 
 
 export default function Home() {
