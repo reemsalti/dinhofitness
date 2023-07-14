@@ -15,15 +15,50 @@ import stubbornFat from '../public/stubbornFat.png';
 import posturePic from '../public/posture.png';
 import ContactPage from '../components/contactform';
 import Link from 'next/link';
-import CollapsibleText from '../components/CollapsibleText';
+import React, { useState } from 'react';
 
 
 export default function Home() {
   const { sticky, stickyRef } = useSticky();
+  // New states and function for subscription
+  const [email, setEmail] = useState('');
+
+  const subscribe = async (event) => {
+    event.preventDefault();
+
+    const res = await fetch('/api/subscribe', {
+      body: JSON.stringify({
+        email,
+      }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      method: 'POST',
+    })
+
+    const { error } = await res.json()
+
+    if (error) {
+      console.error(error);
+      return;
+    }
+
+    alert('Success! 🎉 You are now subscribed to the mailing list.')
+  }
   return (
     <div className={styles.container}>
       <Head>
-        <title>Dinho Fitness</title>
+        <title>Dinho Fitness</title>        
+        <script id="mcjs" dangerouslySetInnerHTML={{
+          __html: `
+            !function(c,h,i,m,p){
+              m=c.createElement(h),
+              p=c.getElementsByTagName(h)[0],
+              m.async=1,
+              m.src=i,
+              p.parentNode.insertBefore(m,p)
+            }(document,"script","https://chimpstatic.com/mcjs-connected/js/users/73fb9817edc0be55a90510ae1/743c451533ea32536f40f8245.js");
+          `}}/>
       </Head>
       <div className={styles.landingpage}>
         <h2 className={styles.shine} id='home'>Dinho Fitness</h2>
@@ -49,10 +84,13 @@ export default function Home() {
               <div className={styles.aboutimgwrapper}>
                 <Image src={img3} alt='' className={styles.aboutimg} />
               </div>
-              <p className={styles.aboutme}>
-                My name is Mohammed, I'm a Fitness Enthusiast and I've been training for over 6 years now. I competed in two Men's Physique competitions, and my passion for fitness has led me to want to help others achieve their goals as well. As a trainer, I specialize in creating custom meal and fitness plans that are accessible to everyone, because I believe guidance shouldn't be limited by cost.
-                My goal is to provide guidance and support to help clients achieve their fitness goals. Whether you're a beginner or an experienced athlete, I'm committed to helping you reach your full potential and achieve the body of your dreams.
-              </p>
+              <p className={styles.aboutme}>Welcome to Dinho Fitness! I'm Mohammed. I've been privileged to compete in two Men's Physique competitions, which has not only shaped my fitness journey but has fueled my passion to empower others in their personal fitness quests.
+<br></br>
+                My commitment as a professional trainer extends to crafting bespoke meal and fitness plans, individually tailored to your unique needs and aspirations. I firmly believe that everyone, regardless of their financial standing, deserves access to high-quality fitness guidance.
+
+                At Dinho Fitness, we welcome everyone, from beginners taking their first steps towards an active lifestyle to experienced athletes looking to break new ground. I am here to provide the guidance, support, and motivation you need to attain your fitness goals, and ultimately, achieve the body you've always dreamed of.
+
+                Join me, and together, let's transform your fitness journey into an inspiring story of personal achievement.</p>
             </div>
             <div className={styles.aboutbtnwrapper}>
               <Link className={styles.aboutbtn} href='/FitnessJourney'>Check out my fitness journey</Link>
@@ -159,7 +197,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <footer className={styles.footer}>
         <div className={styles.copyrightline}>
           <p className={styles.copyright}><span className={styles.footerlogo}>DINHO FITNESS</span> © 2023</p>
