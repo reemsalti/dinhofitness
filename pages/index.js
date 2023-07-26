@@ -6,11 +6,12 @@ import img1 from '../public/pic4.png'
 import img3 from '../public/pic3.png'
 import diet1 from '../public/Diet1.jpeg'
 import diet2 from '../public/Diet2.jpeg'
-import stubbornFat from '../public/stubbornFat.png'
+import stubbornFat from '../public/Body.png'
 import posturePic from '../public/posture.png'
 import img4 from '../public/balanzi.jpeg'
 import img5 from '../public/epn.jpeg'
 import img7 from '../public/truMedic.png'
+import abs from '../public/Abs.jpeg'
 import ScrollArrow from '../components/ScrollArrow'
 import useSticky from '../components/useSticky'
 import Link from 'next/link'
@@ -48,7 +49,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Dinho Fitness</title>        
+        <title>Dinho Fitness</title>
         <script id="mcjs" dangerouslySetInnerHTML={{
           __html: `
             !function(c,h,i,m,p){
@@ -58,7 +59,7 @@ export default function Home() {
               m.src=i,
               p.parentNode.insertBefore(m,p)
             }(document,"script","https://chimpstatic.com/mcjs-connected/js/users/73fb9817edc0be55a90510ae1/743c451533ea32536f40f8245.js");
-          `}}/>
+          `}} />
       </Head>
       <div className={styles.landingpage}>
         <h2 className={styles.shine} id='home'>Dinho Fitness</h2>
@@ -84,12 +85,11 @@ export default function Home() {
               <div className={styles.aboutimgwrapper}>
                 <Image src={img3} alt='' className={styles.aboutimg} />
               </div>
-              <p className={styles.aboutme}>Welcome to Dinho Fitness! I'm Mohammed. I've been privileged to compete in two Men's Physique competitions, which has not only shaped my fitness journey but has fueled my passion to empower others in their personal fitness quests.
-              <br></br>
-              There are infinite reasons why individuals hire a personal trainer. The commonality, though, is that they have acknowledged that they want, or need, to improve their health or physical fitness ! In other words, you want to change your current state to a more desirable state.
-              </p><br></br><br></br>
-              <p>I'm here to support you the best I can</p>
-                
+              <p className={styles.aboutme}>Welcome to Dinho Fitness! My name is Mohammed and I'm a certified ISSA Personal Trainer. I've been privileged to compete in two Men's Physique competitions, which has not only shaped my fitness journey but has fueled my passion to empower others to embark their personal fitness quests.
+                <br></br><br></br>
+                There are infinite reasons why you might want to hire a personal trainer. The commonality, though, is that you have acknowledged what you want, or need, to improve your health or physical fitness ! In other words, you want to change your current state to a more desirable state.
+                <br></br><br></br>
+                And I'm here to support you the best I can</p>
             </div>
             <div className={styles.aboutbtnwrapper}>
               <Link className={styles.aboutbtn} href='/FitnessJourney'>Check out my fitness journey</Link>
@@ -104,7 +104,7 @@ export default function Home() {
                   <p className={styles.pricetag}>$10.00</p>
                 </div>
                 <p className={styles.proddescription}>BUILD Cookbook</p>
-                <p className={styles.proddetail}>The BUILD Cookbook consists of calorie dense healthy meals that are simple to make, and taste great!</p>
+                <p className={styles.proddetail}>The BUILD Cookbook consists of calorie dense healthy meals that are simple to make, and taste great! Click the <span className={styles.footerlogo}>Buy</span> button to learn more </p>
                 <div className={styles.btnwrapper}>
                   <a href='https://buy.stripe.com/28odRv5yP0sEbVm001' className={styles.buybtn}>Buy now</a>
                 </div>
@@ -115,7 +115,7 @@ export default function Home() {
                   <p className={styles.pricetag}>$10.00</p>
                 </div>
                 <p className={styles.proddescription}>SHRED Cookbook</p>
-                <p className={styles.proddetail}>The SHRED Cookbook consists of less calorie dense healthy meals which are perfect when you are trying to lose fat.</p>
+                <p className={styles.proddetail}>The SHRED Cookbook consists of less calorie dense healthy meals which are perfect when you are trying to lose fat!  Click the <span className={styles.footerlogo}>Buy</span> button to learn more</p>
                 <div className={styles.btnwrapper}>
                   <a href='https://buy.stripe.com/dR66p39P5b7i9NefYY' className={styles.buybtn}>Buy Now</a>
                 </div>
@@ -148,9 +148,20 @@ export default function Home() {
                   <p className={styles.pricetag}>FREE</p>
                 </div>
                 <p className={styles.proddescription}>THE PERFECT POSTURE</p>
-                <p className={styles.proddetail}>Do you find yourself constantly in pain around your neck or lower body ? Try the exercises discussed in this book ! </p>
+                <p className={styles.proddetail}>Do you find yourself constantly in pain around your neck or lower body ? Try the exercises discussed in this book to combat your chronic pain and live pain free! </p>
                 <div className={styles.btnwrapper}>
                   <a href='https://dinhofitness-public.s3.amazonaws.com/E-books/Perfect_Posture_In_30_Days_Rebranded.pdf' download className={styles.buybtn}>Download</a>
+                </div>
+              </div>
+              <div className={styles.card}>
+                <div className={styles.imgwrapper}>
+                  <Image className={styles.prodimg} src={abs} alt='' />
+                  <p className={styles.pricetag}>FREE</p>
+                </div>
+                <p className={styles.proddescription}>SECRETS TO A LEAN BODY</p>
+                <p className={styles.proddetail}>This E-Book created by Mike Geary offers an eye opening solution to easily obtaining a lean body of your choice. Feel free to download the book and hopefully learn a thing or two !</p>
+                <div className={styles.btnwrapper}>
+                  <a href='https://dinhofitness-public.s3.amazonaws.com/E-books/Training+and+Nutrition+Insider+Secrets+for+a+Lean-Body.pdf' download className={styles.buybtn}>Download</a>
                 </div>
               </div>
             </div>
@@ -161,7 +172,7 @@ export default function Home() {
                   <Image className={styles.prodimg} src={img4} alt='' />
                   <p className={styles.pricetag}>25% OFF</p>
                 </div>
-                <p className={styles.proddescription}>Get 25% off jewelry using code "MAMDISAVE25%" **Apply code at Checkout</p>
+                <p className={styles.proddescription}>Get 25% off ice Balanzi UK jewelry using code <span className={styles.footerlogo}>"MAMDISAVE25%"</span> **Apply code at Checkout</p>
                 <div className={styles.btnwrapper}>
                   <a href="https://balanzi.com/" target='_blank' className={styles.buybtn}>SHOP SITE</a>
                 </div>
@@ -171,7 +182,7 @@ export default function Home() {
                   <Image className={styles.prodimg} src={img5} alt='' />
                   <p className={styles.pricetag}>10% OFF</p>
                 </div>
-                <p className={styles.proddescription}>Get 10% off Nutritional Supplements using code "MFALAHY" **Apply code at Checkout</p>
+                <p className={styles.proddescription}>Get 10% off Nutritional Supplements using code <span className={styles.footerlogo}>"MFALAHY"</span> **Apply code at Checkout</p>
                 <div className={styles.btnwrapper}>
                   <a href="https://ep-nutrition.com?aff=10413" target='_blank' className={styles.buybtn}>SHOP SITE</a>
                 </div>
@@ -181,7 +192,7 @@ export default function Home() {
                   <Image className={styles.prodimg} src={img7} alt='' />
                   <p className={styles.pricetag}>33% OFF</p>
                 </div>
-                <p className={styles.proddescription}>Get 33% off TruMedic Cold & Heat Massage gun using code "MAMDINHO33" **Apply code at Checkout</p>
+                <p className={styles.proddescription}>Get 33% off TruMedic Cold & Heat Massage gun using code <span className={styles.footerlogo}>"MAMDINHO33"</span> **Apply code at Checkout</p>
                 <div className={styles.btnwrapper}>
                   <a href="https://trumedic.com/products/trurelief%E2%84%A2-impact-therapy-device-thermal" target='_blank' className={styles.buybtn}>SHOP SITE</a>
                 </div>
