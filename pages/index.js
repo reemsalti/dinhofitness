@@ -3,19 +3,19 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import img1 from '../public/pic4.png'
-import img2 from '../public/cookBook2.png'
-import img6 from '../public/cookBook.jpeg'
+import img3 from '../public/pic3.png'
+import diet1 from '../public/Diet1.jpeg'
+import diet2 from '../public/Diet2.jpeg'
+import stubbornFat from '../public/stubbornFat.png'
+import posturePic from '../public/posture.png'
+import img4 from '../public/balanzi.jpeg'
+import img5 from '../public/epn.jpeg'
+import img7 from '../public/truMedic.png'
 import ScrollArrow from '../components/ScrollArrow'
 import useSticky from '../components/useSticky'
-import img3 from '../public/pic3.png'
-import img4 from '../public/balanzi.jpeg';
-import img5 from '../public/epn.jpeg';
-import img7 from '../public/truMedic.png';
-import stubbornFat from '../public/stubbornFat.png';
-import posturePic from '../public/posture.png';
-import ContactPage from '../components/contactform';
-import Link from 'next/link';
-import React, { useState } from 'react';
+import Link from 'next/link'
+import React, { useState } from 'react'
+import ContactPage from '../components/contactform'
 
 
 export default function Home() {
@@ -100,7 +100,7 @@ export default function Home() {
             <div className={styles.cards}>
               <div className={styles.card}>
                 <div className={styles.imgwrapper}>
-                  <Image className={styles.prodimg} src={img6} alt='' />
+                  <Image className={styles.prodimg} src={diet2} alt='' />
                   <p className={styles.pricetag}>$10.00</p>
                 </div>
                 <p className={styles.proddescription}>BUILD Cookbook</p>
@@ -111,7 +111,7 @@ export default function Home() {
               </div>
               <div className={styles.card}>
                 <div className={styles.imgwrapper}>
-                  <Image className={styles.prodimg} src={img2} alt='' />
+                  <Image className={styles.prodimg} src={diet1} alt='' />
                   <p className={styles.pricetag}>$10.00</p>
                 </div>
                 <p className={styles.proddescription}>SHRED Cookbook</p>
