@@ -85,12 +85,11 @@ export default function Home() {
                 <Image src={img3} alt='' className={styles.aboutimg} />
               </div>
               <p className={styles.aboutme}>Welcome to Dinho Fitness! I'm Mohammed. I've been privileged to compete in two Men's Physique competitions, which has not only shaped my fitness journey but has fueled my passion to empower others in their personal fitness quests.
-<br></br>
-                My commitment as a professional trainer extends to crafting bespoke meal and fitness plans, individually tailored to your unique needs and aspirations. I firmly believe that everyone, regardless of their financial standing, deserves access to high-quality fitness guidance.
-
-                At Dinho Fitness, we welcome everyone, from beginners taking their first steps towards an active lifestyle to experienced athletes looking to break new ground. I am here to provide the guidance, support, and motivation you need to attain your fitness goals, and ultimately, achieve the body you've always dreamed of.
-
-                Join me, and together, let's transform your fitness journey into an inspiring story of personal achievement.</p>
+              <br></br>
+              There are infinite reasons why individuals hire a personal trainer. The commonality, though, is that they have acknowledged that they want, or need, to improve their health or physical fitness ! In other words, you want to change your current state to a more desirable state.
+              </p><br></br><br></br>
+              <p>I'm here to support you the best I can</p>
+                
             </div>
             <div className={styles.aboutbtnwrapper}>
               <Link className={styles.aboutbtn} href='/FitnessJourney'>Check out my fitness journey</Link>
