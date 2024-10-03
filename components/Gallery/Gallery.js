@@ -1,6 +1,8 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // 
 import { Carousel } from "react-responsive-carousel";
 import styles from './gallery.module.css'
+import Image from 'next/image';
+
 const img1 = '/FitnessJourney/2fe62568-4c6b-4dae-bfe4-63528d34e574.JPG';
 const img_1 = '/FitnessJourney/IMG_1.jpg';
 const img_2 = '/FitnessJourney/IMG_2.jpg';
