@@ -45,205 +45,205 @@ const ImageSlider = () => {
         thumbWidth={100}
       >
         <div>
-          <img
+          <Image
             src={img18}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img_3}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img_2}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img_1}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img2}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img3}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img4}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img5}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img6}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img7}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img8}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img9}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img10}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img11}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img12}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img13}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img14}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img15}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img16}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img17}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img1}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img19}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img20}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img21}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img22}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img23}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img24}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img25}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img26}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img27}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img28}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img29}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img30}
             alt=""
           />
         </div>
         <div>
-          <img
+          <Image
             src={img31}
             alt=""
           />

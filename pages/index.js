@@ -62,7 +62,7 @@ export default function Home() {
           `}} />
       </Head>
       <div className={styles.landingpage}>
-        <h2 className={styles.shine} id='home'>Dinho Fitness</h2>
+        <h2 className={styles.shine} id='home'>Book your Fitness with Me</h2>
         <div className={styles.bgcover}>
         </div>
         <Image src={img3} alt='' className={styles.landingbg} />
@@ -85,18 +85,18 @@ export default function Home() {
               <div className={styles.aboutimgwrapper}>
                 <Image src={img3} alt='' className={styles.aboutimg} />
               </div>
-              <p className={styles.aboutme}>Welcome to Dinho Fitness! My name is Mohammed and I'm a certified ISSA Personal Trainer. I've been privileged to compete in two Men's Physique competitions, which has not only shaped my fitness journey but has fueled my passion to empower others to embark their personal fitness quests.
+              <p className={styles.aboutme}>Welcome to my Fitness page! My name is Mohammed and I'm a certified ISSA Personal Trainer at LA Fitness and Cloud Security Specialist. I've been privileged to compete in three Men's Physique competitions, which has not only shaped my fitness journey but has fueled my passion to empower others to embark their personal fitness quests.
                 <br></br><br></br>
-                There are infinite reasons why you might want to hire a personal trainer. The commonality, though, is that you have acknowledged what you want, or need, to improve your health or physical fitness ! In other words, you want to change your current state to a more desirable state.
+                There are infinite reasons why you might want to hire a personal trainer at our Club. The commonality, though, is that you have acknowledged what you want, or need, to improve your health or physical fitness ! In other words, you want to change your current state to a more desirable state.
                 <br></br><br></br>
-                And I'm here to support you the best I can</p>
+                And I'm here to support you the best I can along our amazing Staff</p>
             </div>
             <div className={styles.aboutbtnwrapper}>
-              <Link className={styles.aboutbtn} href='/FitnessJourney'>Check out my fitness journey</Link>
+              <Link className={styles.aboutbtn} href='/FitnessJourney'>Check out my fitness journey from 16 years</Link>
             </div>
           </div>
           <div className={styles.section}>
-            <h2 className={styles.subheader} id='shop'>Shop</h2>
+            <h2 className={styles.subheader} id='shop'>Shop (To be Integrated ... soon)</h2>
             <div className={styles.cards}>
               <div className={styles.card}>
                 <div className={styles.imgwrapper}>
@@ -209,7 +209,7 @@ export default function Home() {
       </div>
       <footer className={styles.footer}>
         <div className={styles.copyrightline}>
-          <p className={styles.copyright}><span className={styles.footerlogo}>DINHO FITNESS</span> © 2023</p>
+          <p className={styles.copyright}><span className={styles.footerlogo}>DINHO FITNESS</span> © 2023 Mohammed Al-Falahy</p>
         </div>
       </footer>
     </div>
