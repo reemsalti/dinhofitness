@@ -62,7 +62,7 @@ export default function Home() {
           `}} />
       </Head>
       <div className={styles.landingpage}>
-        <h2 className={styles.shine} id='home'>Book your Fitness with Me</h2>
+        <h2 className={styles.shine} id='home'>Book your Fitness Consultation with Me</h2>
         <div className={styles.bgcover}>
         </div>
         <Image src={img3} alt='' className={styles.landingbg} />
@@ -85,23 +85,24 @@ export default function Home() {
               <div className={styles.aboutimgwrapper}>
                 <Image src={img3} alt='' className={styles.aboutimg} />
               </div>
-              <p className={styles.aboutme}>Welcome to my Fitness page! My name is Mohammed and I'm a certified ISSA Personal Trainer at LA Fitness and Cloud Security Specialist. I've been privileged to compete in three Men's Physique competitions, which has not only shaped my fitness journey but has fueled my passion to empower others to embark their personal fitness quests.
+              <p className={styles.aboutme}>Welcome to my Fitness page! My name is Mohammed Al-Falahy, I'm a certified ISSA Personal Trainer & coach, and a partner with FRESH-OP retaurant located at LA Fitness Appleby, Burlington. I've been privileged to have competed in three Men's Physique competitions, which has not only shaped my fitness journey but has fueled my passion to empower others to embark their personal fitness quests.
                 <br></br><br></br>
-                There are infinite reasons why you might want to hire a personal trainer at our Club. The commonality, though, is that you have acknowledged what you want, or need, to improve your health or physical fitness ! In other words, you want to change your current state to a more desirable state.
+                There are infinite reasons why you might want to hire a personal trainer. The commonality, though, is that you have acknowledged what you want, or need, to improve your health or physical fitness ! In other words, you want to change your current state to a more desirable state.
                 <br></br><br></br>
-                And I'm here to support you the best I can along our amazing Staff</p>
+                And I'm here to support you the best I can along our amazing staff</p>
             </div>
             <div className={styles.aboutbtnwrapper}>
               <Link className={styles.aboutbtn} href='/FitnessJourney'>Check out my fitness journey from 16 years</Link>
             </div>
           </div>
+          <br></br>
           <div className={styles.section}>
-            <h2 className={styles.subheader} id='shop'>Shop (To be Integrated ... soon)</h2>
+            <h2 className={styles.subheader} id='shop'>Shop</h2>
             <div className={styles.cards}>
               <div className={styles.card}>
                 <div className={styles.imgwrapper}>
                   <Image className={styles.prodimg} src={diet2} alt='' />
-                  <p className={styles.pricetag}>$10.00</p>
+                  <p className={styles.pricetag}>$6.00</p>
                 </div>
                 <p className={styles.proddescription}>BUILD Cookbook</p>
                 <p className={styles.proddetail}>The BUILD Cookbook consists of calorie dense healthy meals that are simple to make, and taste great! Click the <span className={styles.footerlogo}>Buy</span> button to learn more </p>
@@ -112,7 +113,7 @@ export default function Home() {
               <div className={styles.card}>
                 <div className={styles.imgwrapper}>
                   <Image className={styles.prodimg} src={diet1} alt='' />
-                  <p className={styles.pricetag}>$10.00</p>
+                  <p className={styles.pricetag}>$6.00</p>
                 </div>
                 <p className={styles.proddescription}>SHRED Cookbook</p>
                 <p className={styles.proddetail}>The SHRED Cookbook consists of less calorie dense healthy meals which are perfect when you are trying to lose fat!  Click the <span className={styles.footerlogo}>Buy</span> button to learn more</p>
@@ -139,7 +140,7 @@ export default function Home() {
                 <p className={styles.proddescription}>THE STUBBORN FAT</p>
                 <p className={styles.proddetail}>This is an E-book that I personally enjoyed reading. It gives a ton of insight as to why you might not be loosing that stubborn belly fat. </p>
                 <div className={styles.btnwrapper}>
-                  <a href='https://dinhofitness-public.s3.amazonaws.com/E-books/The+Stubborn+Fat+Solution+-+Flatten+Your+Abs.pdf' download className={styles.buybtn}>Download</a>
+                  <a href='https://mypublic-bucket.s3.ca-central-1.amazonaws.com/dinho-fitness/The+Stubborn+Fat+Solution+-+Flatten+Your+Abs.pdf' download className={styles.buybtn}>Download</a>
                 </div>
               </div>
               <div className={styles.card}>
@@ -150,7 +151,7 @@ export default function Home() {
                 <p className={styles.proddescription}>THE PERFECT POSTURE</p>
                 <p className={styles.proddetail}>Do you find yourself constantly in pain around your neck or lower body ? Try the exercises discussed in this book to combat your chronic pain and live pain free! </p>
                 <div className={styles.btnwrapper}>
-                  <a href='https://dinhofitness-public.s3.amazonaws.com/E-books/Perfect_Posture_In_30_Days_Rebranded.pdf' download className={styles.buybtn}>Download</a>
+                  <a href='https://mypublic-bucket.s3.ca-central-1.amazonaws.com/dinho-fitness/Posture+and+Core+Conditioning.pdf' download className={styles.buybtn}>Download</a>
                 </div>
               </div>
               <div className={styles.card}>
@@ -161,7 +162,7 @@ export default function Home() {
                 <p className={styles.proddescription}>SECRETS TO A LEAN BODY</p>
                 <p className={styles.proddetail}>This E-Book created by Mike Geary offers an eye opening solution to easily obtaining a lean body of your choice. Feel free to download the book and hopefully learn a thing or two !</p>
                 <div className={styles.btnwrapper}>
-                  <a href='https://dinhofitness-public.s3.amazonaws.com/E-books/Training+and+Nutrition+Insider+Secrets+for+a+Lean-Body.pdf' download className={styles.buybtn}>Download</a>
+                  <a href='https://mypublic-bucket.s3.ca-central-1.amazonaws.com/dinho-fitness/Training+and+Nutrition+Insider+Secrets+for+a+Lean-Body.pdf' download className={styles.buybtn}>Download</a>
                 </div>
               </div>
             </div>
@@ -179,16 +180,6 @@ export default function Home() {
               </div>
               <div className={styles.card}>
                 <div className={styles.imgwrapper}>
-                  <Image className={styles.prodimg} src={img5} alt='' />
-                  <p className={styles.pricetag}>10% OFF</p>
-                </div>
-                <p className={styles.proddescription}>Get 10% off Nutritional Supplements using code <span className={styles.footerlogo}>"MFALAHY"</span> **Apply code at Checkout</p>
-                <div className={styles.btnwrapper}>
-                  <a href="https://ep-nutrition.com?aff=10413" target='_blank' className={styles.buybtn}>SHOP SITE</a>
-                </div>
-              </div>
-              <div className={styles.card}>
-                <div className={styles.imgwrapper}>
                   <Image className={styles.prodimg} src={img7} alt='' />
                   <p className={styles.pricetag}>33% OFF</p>
                 </div>
@@ -200,7 +191,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.section}>
-            <h2 className={styles.subheader} id='contact'>Leave me a message</h2>
+            <h2 className={styles.subheader} id='contact'>Leave me a message or book your 30 min free consultation</h2>
             <div className={styles.contactsection}>
               <ContactPage />
             </div>
@@ -209,7 +200,7 @@ export default function Home() {
       </div>
       <footer className={styles.footer}>
         <div className={styles.copyrightline}>
-          <p className={styles.copyright}><span className={styles.footerlogo}>DINHO FITNESS</span> © 2023 Mohammed Al-Falahy</p>
+          <p className={styles.copyright}><span className={styles.footerlogo}>DINHO FITNESS</span> © 2024 Mohammed Al-Falahy</p>
         </div>
       </footer>
     </div>
