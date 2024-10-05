@@ -4,19 +4,14 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import img1 from '../public/pic4.png'
 import img3 from '../public/pic3.png'
-import diet1 from '../public/Diet1.jpeg'
-import diet2 from '../public/Diet2.jpeg'
-import stubbornFat from '../public/Body.png'
-import posturePic from '../public/posture.png'
-import img4 from '../public/balanzi.jpeg'
+import img4 from '../public/balanzi.jpeg';
 import img5 from '../public/epn.jpeg'
 import img7 from '../public/truMedic.png'
-import abs from '../public/Abs.jpeg'
-import ScrollArrow from '../components/ScrollArrow'
-import useSticky from '../components/useSticky'
-import Link from 'next/link'
-import React, { useState } from 'react'
+import stubbornFat from '../public/stubbornFat.png'
+import posturePic from '../public/posture.png'
 import ContactPage from '../components/contactform'
+import Link from 'next/link'
+// import CollapsibleText from '../components/CollapsibleText';
 
 
 export default function Home() {
@@ -50,16 +45,6 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Dinho Fitness</title>
-        <script id="mcjs" dangerouslySetInnerHTML={{
-          __html: `
-            !function(c,h,i,m,p){
-              m=c.createElement(h),
-              p=c.getElementsByTagName(h)[0],
-              m.async=1,
-              m.src=i,
-              p.parentNode.insertBefore(m,p)
-            }(document,"script","https://chimpstatic.com/mcjs-connected/js/users/73fb9817edc0be55a90510ae1/743c451533ea32536f40f8245.js");
-          `}} />
       </Head>
       <div className={styles.landingpage}>
         <h2 className={styles.shine} id='home'>Book your Fitness Consultation with Me</h2>
@@ -85,11 +70,10 @@ export default function Home() {
               <div className={styles.aboutimgwrapper}>
                 <Image src={img3} alt='' className={styles.aboutimg} />
               </div>
-              <p className={styles.aboutme}>Welcome to my Fitness page! My name is Mohammed Al-Falahy, I'm a certified ISSA Personal Trainer & coach, and a partner with FRESH-OP retaurant located at LA Fitness Appleby, Burlington. I've been privileged to have competed in three Men's Physique competitions, which has not only shaped my fitness journey but has fueled my passion to empower others to embark their personal fitness quests.
-                <br></br><br></br>
-                There are infinite reasons why you might want to hire a personal trainer. The commonality, though, is that you have acknowledged what you want, or need, to improve your health or physical fitness ! In other words, you want to change your current state to a more desirable state.
-                <br></br><br></br>
-                And I'm here to support you the best I can along our amazing staff</p>
+              <p className={styles.aboutme}>
+                My name is Mohammed, I'm a Fitness Enthusiast and I've been training for over 6 years now. I competed in two Men's Physique competitions, and my passion for fitness has led me to want to help others achieve their goals as well. As a trainer, I specialize in creating custom meal and fitness plans that are accessible to everyone, because I believe guidance shouldn't be limited by cost.
+                My goal is to provide guidance and support to help clients achieve their fitness goals. Whether you're a beginner or an experienced athlete, I'm committed to helping you reach your full potential and achieve the body of your dreams.
+              </p>
             </div>
             <div className={styles.aboutbtnwrapper}>
               <Link className={styles.aboutbtn} href='/FitnessJourney'>Check out my fitness journey from 16 years</Link>
