@@ -133,7 +133,7 @@ const ContactPage = () => {
       <div className={styles.contactinfo}>
         <div className={styles.clinks}>
           <a href='tel:6476670878' className={styles.clink}>
-            WhatsApp +1 (647)-667-0878
+            WhatsApp +1 (289)-795-5323
           </a>
           <br></br>
           <a href='mailto:mohammedfalahy6@gmail.com' className={styles.clink}>
